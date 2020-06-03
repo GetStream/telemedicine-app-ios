@@ -1,0 +1,461 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		805B72E52486EC4B0049AF97 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805B72E42486EC4B0049AF97 /* AppDelegate.swift */; };
+		805B72E72486EC4B0049AF97 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805B72E62486EC4B0049AF97 /* SceneDelegate.swift */; };
+		805B72E92486EC4B0049AF97 /* JoinViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805B72E82486EC4B0049AF97 /* JoinViewController.swift */; };
+		805B72EC2486EC4B0049AF97 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805B72EA2486EC4B0049AF97 /* Main.storyboard */; };
+		805B72EE2486EC500049AF97 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 805B72ED2486EC500049AF97 /* Assets.xcassets */; };
+		805B72F12486EC500049AF97 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 805B72EF2486EC500049AF97 /* LaunchScreen.storyboard */; };
+		805B72FA2486EDF60049AF97 /* JoinViewController+Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805B72F92486EDF60049AF97 /* JoinViewController+Views.swift */; };
+		805B72FC2486F1770049AF97 /* JoinViewController+Constraints.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805B72FB2486F1770049AF97 /* JoinViewController+Constraints.swift */; };
+		805B72FE2486F2370049AF97 /* JoinViewController+Handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 805B72FD2486F2370049AF97 /* JoinViewController+Handlers.swift */; };
+		80C9336E2487158500DFE1DB /* ConsultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C9336D2487158400DFE1DB /* ConsultViewController.swift */; };
+		80C9337024873E2200DFE1DB /* ConsultViewController+Views.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C9336F24873E2200DFE1DB /* ConsultViewController+Views.swift */; };
+		80C9337224873E6D00DFE1DB /* ConsultViewController+Handlers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C9337124873E6D00DFE1DB /* ConsultViewController+Handlers.swift */; };
+		80C9337424873F9D00DFE1DB /* ConsultViewController+Chat.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C9337324873F9D00DFE1DB /* ConsultViewController+Chat.swift */; };
+		80C9337624873FE900DFE1DB /* ConsultViewController+Call.swift in Sources */ = {isa = PBXBuildFile; fileRef = 80C9337524873FE900DFE1DB /* ConsultViewController+Call.swift */; };
+		D8658AE9E7C5E2B9B3BDC29F /* Pods_TelemedicineApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 45A759C51EBB07B8779A5A76 /* Pods_TelemedicineApp.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0F5D488BD6DB895EF1FF9881 /* Pods-TelemedicineApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelemedicineApp.release.xcconfig"; path = "Target Support Files/Pods-TelemedicineApp/Pods-TelemedicineApp.release.xcconfig"; sourceTree = "<group>"; };
+		45A759C51EBB07B8779A5A76 /* Pods_TelemedicineApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TelemedicineApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7104FEB386916414E821B613 /* Pods-TelemedicineApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TelemedicineApp.debug.xcconfig"; path = "Target Support Files/Pods-TelemedicineApp/Pods-TelemedicineApp.debug.xcconfig"; sourceTree = "<group>"; };
+		805B72E12486EC4B0049AF97 /* TelemedicineApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TelemedicineApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		805B72E42486EC4B0049AF97 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		805B72E62486EC4B0049AF97 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		805B72E82486EC4B0049AF97 /* JoinViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JoinViewController.swift; sourceTree = "<group>"; };
+		805B72EB2486EC4B0049AF97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		805B72ED2486EC500049AF97 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		805B72F02486EC500049AF97 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		805B72F22486EC500049AF97 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		805B72F92486EDF60049AF97 /* JoinViewController+Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JoinViewController+Views.swift"; sourceTree = "<group>"; };
+		805B72FB2486F1770049AF97 /* JoinViewController+Constraints.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JoinViewController+Constraints.swift"; sourceTree = "<group>"; };
+		805B72FD2486F2370049AF97 /* JoinViewController+Handlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JoinViewController+Handlers.swift"; sourceTree = "<group>"; };
+		80C9336D2487158400DFE1DB /* ConsultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConsultViewController.swift; sourceTree = "<group>"; };
+		80C9336F24873E2200DFE1DB /* ConsultViewController+Views.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConsultViewController+Views.swift"; sourceTree = "<group>"; };
+		80C9337124873E6D00DFE1DB /* ConsultViewController+Handlers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConsultViewController+Handlers.swift"; sourceTree = "<group>"; };
+		80C9337324873F9D00DFE1DB /* ConsultViewController+Chat.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConsultViewController+Chat.swift"; sourceTree = "<group>"; };
+		80C9337524873FE900DFE1DB /* ConsultViewController+Call.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "ConsultViewController+Call.swift"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		805B72DE2486EC4B0049AF97 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8658AE9E7C5E2B9B3BDC29F /* Pods_TelemedicineApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		805B72D82486EC4B0049AF97 = {
+			isa = PBXGroup;
+			children = (
+				805B72E32486EC4B0049AF97 /* TelemedicineApp */,
+				805B72E22486EC4B0049AF97 /* Products */,
+				88C236EF1FE24EA18DAC8C2D /* Pods */,
+				CAB71FF5BAE21A30CC18E6E6 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		805B72E22486EC4B0049AF97 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				805B72E12486EC4B0049AF97 /* TelemedicineApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		805B72E32486EC4B0049AF97 /* TelemedicineApp */ = {
+			isa = PBXGroup;
+			children = (
+				805B72E42486EC4B0049AF97 /* AppDelegate.swift */,
+				805B72E62486EC4B0049AF97 /* SceneDelegate.swift */,
+				805B72F82486EDE40049AF97 /* Join */,
+				80C9336C2487156400DFE1DB /* Consult */,
+				805B72EA2486EC4B0049AF97 /* Main.storyboard */,
+				805B72ED2486EC500049AF97 /* Assets.xcassets */,
+				805B72EF2486EC500049AF97 /* LaunchScreen.storyboard */,
+				805B72F22486EC500049AF97 /* Info.plist */,
+			);
+			path = TelemedicineApp;
+			sourceTree = "<group>";
+		};
+		805B72F82486EDE40049AF97 /* Join */ = {
+			isa = PBXGroup;
+			children = (
+				805B72E82486EC4B0049AF97 /* JoinViewController.swift */,
+				805B72F92486EDF60049AF97 /* JoinViewController+Views.swift */,
+				805B72FB2486F1770049AF97 /* JoinViewController+Constraints.swift */,
+				805B72FD2486F2370049AF97 /* JoinViewController+Handlers.swift */,
+			);
+			path = Join;
+			sourceTree = "<group>";
+		};
+		80C9336C2487156400DFE1DB /* Consult */ = {
+			isa = PBXGroup;
+			children = (
+				80C9336D2487158400DFE1DB /* ConsultViewController.swift */,
+				80C9336F24873E2200DFE1DB /* ConsultViewController+Views.swift */,
+				80C9337124873E6D00DFE1DB /* ConsultViewController+Handlers.swift */,
+				80C9337324873F9D00DFE1DB /* ConsultViewController+Chat.swift */,
+				80C9337524873FE900DFE1DB /* ConsultViewController+Call.swift */,
+			);
+			path = Consult;
+			sourceTree = "<group>";
+		};
+		88C236EF1FE24EA18DAC8C2D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7104FEB386916414E821B613 /* Pods-TelemedicineApp.debug.xcconfig */,
+				0F5D488BD6DB895EF1FF9881 /* Pods-TelemedicineApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CAB71FF5BAE21A30CC18E6E6 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				45A759C51EBB07B8779A5A76 /* Pods_TelemedicineApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		805B72E02486EC4B0049AF97 /* TelemedicineApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 805B72F52486EC500049AF97 /* Build configuration list for PBXNativeTarget "TelemedicineApp" */;
+			buildPhases = (
+				4F0DED1240C5F89608F87622 /* [CP] Check Pods Manifest.lock */,
+				805B72DD2486EC4B0049AF97 /* Sources */,
+				805B72DE2486EC4B0049AF97 /* Frameworks */,
+				805B72DF2486EC4B0049AF97 /* Resources */,
+				EAC69AFBC7A327F26279B04D /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TelemedicineApp;
+			productName = TelemedicineApp;
+			productReference = 805B72E12486EC4B0049AF97 /* TelemedicineApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		805B72D92486EC4B0049AF97 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1140;
+				LastUpgradeCheck = 1140;
+				ORGANIZATIONNAME = Stream;
+				TargetAttributes = {
+					805B72E02486EC4B0049AF97 = {
+						CreatedOnToolsVersion = 11.4;
+					};
+				};
+			};
+			buildConfigurationList = 805B72DC2486EC4B0049AF97 /* Build configuration list for PBXProject "TelemedicineApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 805B72D82486EC4B0049AF97;
+			productRefGroup = 805B72E22486EC4B0049AF97 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				805B72E02486EC4B0049AF97 /* TelemedicineApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		805B72DF2486EC4B0049AF97 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				805B72F12486EC500049AF97 /* LaunchScreen.storyboard in Resources */,
+				805B72EE2486EC500049AF97 /* Assets.xcassets in Resources */,
+				805B72EC2486EC4B0049AF97 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4F0DED1240C5F89608F87622 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TelemedicineApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EAC69AFBC7A327F26279B04D /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TelemedicineApp/Pods-TelemedicineApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TelemedicineApp/Pods-TelemedicineApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TelemedicineApp/Pods-TelemedicineApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		805B72DD2486EC4B0049AF97 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				805B72E92486EC4B0049AF97 /* JoinViewController.swift in Sources */,
+				805B72FE2486F2370049AF97 /* JoinViewController+Handlers.swift in Sources */,
+				80C9336E2487158500DFE1DB /* ConsultViewController.swift in Sources */,
+				80C9337224873E6D00DFE1DB /* ConsultViewController+Handlers.swift in Sources */,
+				80C9337424873F9D00DFE1DB /* ConsultViewController+Chat.swift in Sources */,
+				805B72FA2486EDF60049AF97 /* JoinViewController+Views.swift in Sources */,
+				80C9337024873E2200DFE1DB /* ConsultViewController+Views.swift in Sources */,
+				80C9337624873FE900DFE1DB /* ConsultViewController+Call.swift in Sources */,
+				805B72E52486EC4B0049AF97 /* AppDelegate.swift in Sources */,
+				805B72FC2486F1770049AF97 /* JoinViewController+Constraints.swift in Sources */,
+				805B72E72486EC4B0049AF97 /* SceneDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		805B72EA2486EC4B0049AF97 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				805B72EB2486EC4B0049AF97 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		805B72EF2486EC500049AF97 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				805B72F02486EC500049AF97 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		805B72F32486EC500049AF97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		805B72F42486EC500049AF97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		805B72F62486EC500049AF97 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7104FEB386916414E821B613 /* Pods-TelemedicineApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EHV7XZLAHA;
+				INFOPLIST_FILE = TelemedicineApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.stream.devrel.ios.TelemedicineApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		805B72F72486EC500049AF97 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 0F5D488BD6DB895EF1FF9881 /* Pods-TelemedicineApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = EHV7XZLAHA;
+				INFOPLIST_FILE = TelemedicineApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = io.stream.devrel.ios.TelemedicineApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		805B72DC2486EC4B0049AF97 /* Build configuration list for PBXProject "TelemedicineApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				805B72F32486EC500049AF97 /* Debug */,
+				805B72F42486EC500049AF97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		805B72F52486EC500049AF97 /* Build configuration list for PBXNativeTarget "TelemedicineApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				805B72F62486EC500049AF97 /* Debug */,
+				805B72F72486EC500049AF97 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 805B72D92486EC4B0049AF97 /* Project object */;
+}

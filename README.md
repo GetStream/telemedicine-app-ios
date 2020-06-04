@@ -1,6 +1,6 @@
 # 💬 Telemedicine App for iOS with Stream Chat and Dolby.io  [![](https://img.shields.io/twitter/url?url=https%3A%2F%2Fgithub.com%2FGetStream%2Ftwitch-example-ios)](https://twitter.com/intent/tweet?text=Want%20to%20build%20a%20telemedicine%20app%20for%20iOS%20with%20video%20and%20chat%3F%20Learn%20how%3A&url=https%3A%2F%2Fgithub.com%2FGetStream%2Ftelemedicine-app-ios)
 
-<img align="right" src="https://i.imgur.com/MKoVio7.png" width="40%" />
+<img align="right" src="https://i.imgur.com/MKoVio7.png" width="60%" />
 
 ## 📚 Tutorial
 

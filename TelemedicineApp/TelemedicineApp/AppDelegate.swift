@@ -18,9 +18,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
         // Override point for customization after application launch.
-        Client.configureShared(.init(apiKey: "74e5enp33qj2", logOptions: .info))
+        Client.configureShared(.init(apiKey: "74e5enp74e5e", logOptions: .info))
         
-        VoxeetSDK.shared.initialize(consumerKey: "ZTBib3I3NzkzMmt0aA==", consumerSecret: "NDUyM2kzMTc0ZHNvZWxjaHRucG41dmpidnE=")
+        VoxeetSDK.shared.initialize(consumerKey: "ZTzkzMm3NzkzMmt0aA==", consumerSecret: "NDUyM2kzMaHRucG4aWxjaHRucG41dmpidnE=")
         VoxeetUXKit.shared.initialize()
         
         return true

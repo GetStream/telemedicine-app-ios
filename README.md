@@ -4,7 +4,7 @@
 
 ## 📚 Tutorial
 
-This repository contains the completed Xcode project following the [How to Build a Telemedicine App with Video and Chat for iOS](https://comingsoon/) tutorial. You should read it before trying to run this project as it contains it may contain useful information not present in this README.
+This repository contains the completed Xcode project following the [How to Build a Telemedicine App with Video and Chat for iOS](https://getstream.io/blog/telemedicine-video-chat-ios/) tutorial. You should read it before trying to run this project as it contains it may contain useful information not present in this README.
 
 ## ⚙️ Setup
 
@@ -34,5 +34,5 @@ Run this sample app as any normal app, but only on real devices. If you run in a
 
 - [Build an iMessage Clone with The Stream Chat iOS SDK](https://getstream.io/blog/build-imessage-clone/)
 - [Stream Chat iOS Tutorial](https://getstream.io/tutorials/ios-chat/)
-- [Stream Chat iOS Repo](https://github.com/GetStream/stream-chat-swift)
+- [Stream Chat iOS Repo](https://github.com/GetStream/stream-chat-swift/)
 - [Stream Chat iOS Docs](http://getstream.io/chat/docs?language=swift)

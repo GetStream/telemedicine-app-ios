@@ -1,0 +1,86 @@
+41
+
+from the man page
+
+linux$ man -S 5 crontab
+
+   cron(8) examines cron entries once every minute.
+
+   The time and date fields are:
+
+          field          allowed values
+          -----          --------------
+          minute         0-59
+          hour           0-23
+          day of month   1-31
+          month          1-12 (or names, see below)
+          day of week    0-7 (0 or 7 is Sun, or use names)
+   ...
+   # run five minutes after midnight, every day
+   5 0 * * *       $HOME/bin/daily.job >> $HOME/tmp/out 2>&1
+   ...
+It is good to note the special "nicknames" that can be used (documented in the man page), particularly "@reboot" which has no time and date alternative.
+
+   # Run once after reboot.
+   @reboot         /usr/local/sbin/run_only_once_after_reboot.sh
+You can also use this trick to run your cron job multiple times per minute.
+
+   # Run every minute at 0, 20, and 40 second intervals
+   * * * * *       sleep 00; /usr/local/sbin/run_3times_per_minute.sh
+   * * * * *       sleep 20; /usr/local/sbin/run_3times_per_minute.sh
+   * * * * *       sleep 40; /usr/local/sbin/run_3times_per_minute.sh
+To add a cron job, you can do one of three things:
+
+add a command to a user's crontab, as shown above (and from the crontab, section 5, man page).
+
+edit a user's crontab as root with crontab -e -u <username>
+or edit the current user's crontab with just crontab -e
+You can set the editor with the EDITOR environment variable
+env EDITOR=nano crontab -e -u <username>
+or set the value of EDITOR for your entire shell session
+export EDITOR=vim
+crontab -e
+Make scripts executable with chmod a+x <file>
+
+
+create a script/program as a cron job, and add it to the system's anacron /etc/cron.*ly directories
+
+anacron /etc/cron.*ly directories:
+/etc/cron.daily
+/etc/cron.hourly
+/etc/cron.monthly
+/etc/cron.weekly
+as in:
+/etc/cron.daily/script_runs_daily.sh
+chmod a+x /etc/cron.daily/script_runs_daily.sh -- make it executable
+See also the anacron man page: man anacron
+Make scripts executable with chmod a+x <file>
+When do these cron.*ly script run?
+For RHEL/CentOS 5.x, they are configured in /etc/crontab or /etc/anacrontab to run at a set time
+RHEL/CentOS 6.x+ and Fedora 17+ Linux systems only define this in /etc/anacrontab, and define cron.hourly in /etc/cron.d/0hourly
+
+
+Or, One can create system crontables in /etc/cron.d.
+
+The previously described crontab syntax (with additionally providing a user to execute each job as) is put into a file, and the file is dropped into the /etc/cron.d directory.
+These are easy to manage in system packaging (e.g. RPM packages), so may usually be application specific.
+The syntax difference is that a user must be specified for the cron job after the time/date fields and before the command to execute.
+The files added to /etc/cron.d do not need to be executable.
+Here is an example job that is executed as the user someuser, and the use of /bin/bash as the shell is forced.
+
+
+   File: /etc/cron.d/myapp-cron
+   # use /bin/bash to run commands, no matter what /etc/passwd says
+   SHELL=/bin/bash
+   # Execute a nightly (11:00pm) cron job to scrub application records
+   00 23 * * * someuser /opt/myapp/bin/scrubrecords.php# To get started with Dependabot version updates, you'll need to specify which
+# package ecosystems to update and where the package manifests are located.
+# Please see the documentation for all configuration options:
+# https://help.github.com/github/administering-a-repository/configuration-options-for-dependency-updates
+
+version: 2
+updates:
+  - package-ecosystem: "" # See documentation for possible values
+    directory: "/" # Location of package manifests
+    schedule:
+      interval: "daily"

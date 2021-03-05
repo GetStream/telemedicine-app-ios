@@ -1,0 +1,116 @@
+Please install python 9.8 to run this project, there will be no problems
+
+The next step is to produce the installation program on windows and mac systems
+
+windows now finished package, please download the ipfile, unzip, double click main.exeto run, but still need to fill in extracting file config.ini configuration information eidand fpstill need to fill in, oh, do not forget Oh! ! !
+
+Optimize content
+2021-01-02 Optimize purchase time
+
+Special statement:
+illAny scripts involved in the projects published in this warehouse are only used for testing, learning and research, and are forbidden to be used for commercial purposes. Their legality, accuracy, completeness and effectiveness cannot be guaranteed. Please make your own judgment based on the situation.
+
+All resource files in this project are prohibited from being reproduced and published in any form by any official account or self-media.
+
+ChinaVolvocars We are not responsible for any script problems, including but not limited to any loss or damage caused by any script errors.
+
+Any user who indirectly uses the script, including but not limited to establishing a VPS or disseminating it in violation of national/regional laws or related regulations, ChinaVolvocarsis not responsible for any privacy leakage or other consequences caused by this.
+
+Do not use jd_maotai_seckillany content of the project for commercial or illegal purposes, otherwise you will be responsible for the consequences.
+
+If any unit or individual believes that the script of the project may be suspected of infringing on their rights, they should promptly notify and provide proof of identity and ownership. We will delete the relevant script after receiving the certification documents.
+
+Anyone who views this project in any way or who directly or indirectly uses jd_maotai_seckillany script of the project should read this statement carefully. ChinaVolvocarsReserve the right to change or supplement this disclaimer at any time. Once you have used and copied any related scripts or jd_maotai_seckillitems, you are deemed to have accepted this disclaimer.
+
+You must completely delete the above content from your computer or mobile phone within 24 hours after downloading.
+
+This project complies with the GPL-3.0 Licenseagreement. If GPL-3.0 Licensethere is any conflict between this special statement and the agreement, this special statement shall prevail.
+
+You have used or copied any code or item produced by you in this warehouse, it is regarded as ???this statement. Please read carefully any code or item produced by yourself when you used or copied this warehouse and
+this statement is not issued. Is still in use, it is regarded as ???this statement, please read carefully
+
+Introduction
+Through my use during this period (2020-12-12 to 2020-12-17), it is confirmed that this script can indeed grab Moutai. I grabbed four bottles from my three accounts and helped two friends grab four bottles. Everyone just needs to confirm that there is no problem with your configuration file and that the Cookie has not expired. You can always succeed if you stick to it.
+
+According to everyone's feedback during this period, except Moutai, other products that do not need to be added to the shopping cart can not be grabbed. The specific reason has not yet been investigated. It should be that JD’s non-Maotai product snap-up process has changed.
+In order to avoid delaying everyone's time, don't panic buying non-Moutai products.
+When this problem is resolved, a new version will be launched.
+
+Secretly observe
+Based on the log analysis of Moutai grabbing since December 14th, boldly infer resultCodethe relationship with Xiaobai's credit in the Json message .
+The main analysis here is the 90016sum with the highest frequency 90008.
+
+Sample JSON
+{ 'errorMessage' : "It 's a pity that I didn't get it, so keep going. ' , 'orderId' : 0 , 'resultCode' : 90016 , 'skuId' : 0 , 'success' : False }
+{ 'errorMessage' : "It 's a pity that I didn't get it, so keep going. ' , 'orderId' : 0 , 'resultCode' : 90008 , 'skuId' : 0 , 'success' : False }
+Statistics
+Case	Little white credit	90016	90008	Time-consuming to grab
+Zhang San	63.8	59.63%	40.37%	Not grabbed yet
+Li Si	92.9	72.05%	27.94%	4 days
+Wang Wu	99.6	75.70%	24.29%	Not grabbed yet
+Zhao Liu	103.4	91.02%	8.9%	2 days
+guess
+It is speculated that the return of 90008 is JD’s risk control mechanism, which means that this request directly failed and did not participate in the panic buying.
+The lower the credit of Xiaobai, the easier it is to trigger JD's risk control.
+
+From the data point of view, the relationship between Xiaobai's credit and risk control is about one level per ten, so Zhao Liu is basically not intercepted, Li Si and Wang Wu have similar intercept rates, and Zhang San has the highest intercept rate.
+
+Panic buying will only be carried out after the risk control is released. At this time, the reservoir counting model should be used. Assuming that all the data cannot be obtained at one time, try to achieve a uniform distribution of successful users, which is related to the probability.
+
+In summary, Zhang San thinks it is a little difficult to succeed. Xiaobai credit is 100+ users with the greatest chance of success.
+
+The main function
+Log in to Jingdong Mall ( www.jd.com )
+QR code given by scanning the QR code with Jingdong APP
+Reserve Moutai
+Scheduled automatic appointment
+Wait for panic buying after seckill appointment
+Automatically snapped up at regular intervals
+Operating environment
+Please install python 3.8 to run this project
+
+Python 3.8
+Third party library
+The libraries that need to be used have been placed in requirements.txt, and instructions can be used to install using pip
+pip install -r requirements.txt
+If the domestic installation of third-party libraries is relatively slow, you can use the following instructions to accelerate Tsinghua Yuan pip install -r requirements.txt -i https://pypi.tuna.tsinghua.edu.cn/simple/
+Use tutorial
+1. Recommend Chrome browser
+2. Scan the code to log in on the web, or log in with the account password
+3. Fill in the config.ini configuration information
+(1) eidand fpto find a just general merchandise orders, and then get caught you can see, these two values can fill a fixed
+
+Just find a product to place an order, then enter the settlement page, open the debug window of the browser, switch to the console Tab page, enter the variables in the console, _JdTdudfpand you can get the eidsum from the output Json fp.
+If not, please refer to the original author's issue https://github.com/zhou-xiaojun/jd_mask/issues/22
+
+(2) sku_id,DEFAULT_USER_AGENT
+
+sku_idIt has been filled in according to Moutai. cookies_stringNow you do not need to fill out DEFAULT_USER_AGENTcan use the default. Google Chrome can also enter about:version in the browser address bar to view the USER_AGENTreplacement
+
+(3) Configure the time
+
+Now it is not mandatory to synchronize the latest time, the program will automatically synchronize Jingdong time
+
+But if the computer time is slowing down for several hours, it’s better to synchronize it
+
+All of the above are required.
+
+Tips: After the program starts running, it will detect the local time and the JD server time. The output difference is the local time-the JD server time, that is, -50 means the local time is 50ms slower than the JD server time. The execution time of this code is subject to local computer/server time
+
+(4) Modify the number of bottles purchased
+
+The default number of snap-purchased bottles in the code is 2, and it cannot be modified in the configuration file. If a bottle has been snapped up within a month, it is best to modify the number of snap-purchased bottles to 1. The specific modification is: jd_spider_requests.pysearch in the file self.seckill_num = 2, it will be 2changed to1
+
+4. Run main.py
+Follow the prompts to select the corresponding function
+
+5. Confirmation of panic buying results
+Whether the panic buying is successful is usually visible within one minute of the start of the program!
+Search the log, it shows "successfully snapped up, order number xxxxx", it means that you have successfully grabbed it, and you must pay the order within half an hour! The program does not support automatic stop temporarily, it needs to be manually STOP!
+If the purchase is not successful in two minutes, it is basically not grabbed! The program does not support automatic stop temporarily, it needs to be manually STOP!
+
+Reward
+No more rewards, students who grab Moutai please keep this joy, and continue to cheer for those who have not grabbed it :)
+
+thank
+Thank you very much for the code provided by the original author

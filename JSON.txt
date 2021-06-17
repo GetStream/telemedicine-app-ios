@@ -1,0 +1,38 @@
+{
+  "NPI": [
+    {
+      "NPI": "1588853642 ",
+      "EntityType": "Individual",
+      "IsSoleProprietor": "Y",
+      "LastName": "FELIX",
+      "FirstName": "MARIO",
+      "MiddleName": "HUMBERTO",
+      "NameSuffix": "JR.",
+      "Credential": "PSYD",
+      "FirstLineMailingAddress": "5302 LA CRESENTA ST",
+      "MailingAddressCityName": "SAN ANTONIO",
+      "MailingAddressStateName": "ME",
+      "MailingAddressPostalCode": "78228-0000",
+      "MailingAddressCountryCode": "US",
+      "MailingAddressTelephoneNumber": "210-439-0558",
+      "MailingAddressFaxNumber": "",
+      "FirstLinePracticeLocationAddress": "",
+      "PracticeLocationAddressCityName": "",
+      "PracticeLocationAddressStateName": "ME",
+      "PracticeLocationAddressPostalCode": "",
+      "PracticeLocationAddressCountryCode": "US",
+      "PracticeLocationAddressTelephoneNumber": "",
+      "PracticeLocationAddressFaxNumber": "",
+      "EnumerationDate": "08/05/2006",
+      "LastUpdateDate": "07/08/2007",
+      "GenderCode": "M",
+      "Gender": "Male",
+      "TaxonomyCode1": "183700000X",
+      "Taxonomy1": "Psychologist",
+      "LicenseNumber1": "PS1074",
+      "LicenseNumberStateCode1": "ME",
+      "PrimaryTaxonomySwitch1": "Y"
+    }
+  ]
+}
+                    

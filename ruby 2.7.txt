@@ -1,0 +1,32 @@
+@fetcher = Gem::FakeFetcher.new
+@fetcher.data['http://gems.example.com/yaml'] = source_index.to_yaml
+Gem::RemoteFetcher.fetcher = @fetcher
+
+use nested array if multiple response is needed
+
+@fetcher.data['http://gems.example.com/sequence'] = [['Success', 200, 'OK'], ['Failed', 401, 'Unauthorized']]
+
+@fetcher.fetch_path('http://gems.example.com/sequence') # => ['Success', 200, 'OK']
+@fetcher.fetch_path('http://gems.example.com/sequence') # => ['Failed', 401, 'Unauthorized']
+
+# invoke RubyGems code
+
+paths = @fetcher.paths
+assert_equal 'http://gems.example.com/yaml', paths.shift
+assert paths.empty?, paths.join(', ')
+data[R]
+last_request[R]
+paths[RW]
+Public Class Methods
+new()
+Public Instance Methods
+cache_update_path(uri, path = nil, update = true)
+download(spec, source_uri, install_dir = Gem.dir)
+download_to_cache(dependency)
+fetch_path(path, mtime = nil, head = false)
+fetch_size(path)
+find_data(path, nargs = 3)
+open_uri_or_path(path)
+Thanks, FakeWeb!
+
+request(uri, request_class, last_modified = nil) { |last_request| ... }
